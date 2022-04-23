@@ -1,10 +1,12 @@
 import React from 'react';
 
+import GlobalStyle from './GlobalStyles';
+
 function App() {
   return (
-    <div>
-      App Placeholder
-    </div>
+    <>
+      <GlobalStyle />
+    </>
   );
 }
 
