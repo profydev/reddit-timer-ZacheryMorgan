@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledHeaderList = styled.ul`
   display: flex;
-  gap: 25px;
+  gap: 26px;
 `;
 
 export default StyledHeaderList;
