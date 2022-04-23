@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import StyledHeader from './StyledHeader';
 import StyledHeaderLinks from './StyledHeaderLinks';
@@ -7,11 +8,15 @@ import StyledHeaderList from './StyledHeaderList';
 const Header = () => (
 
   <StyledHeader>
-    <img src="./assets/logo.svg" alt="logo" width="150" height="36" />
+    <Link to="/">
+      <img src="/assets/logo.svg" alt="logo" width="150" height="36" />
+    </Link>
     <StyledHeaderList>
-      <StyledHeaderLinks>Search</StyledHeaderLinks>
-      <StyledHeaderLinks>How it works</StyledHeaderLinks>
-      <StyledHeaderLinks>About</StyledHeaderLinks>
+      <Link to="/search/javascript">
+        <StyledHeaderLinks>Search</StyledHeaderLinks>
+      </Link>
+      <StyledHeaderLinks><a href="#how-it-works">How it works</a></StyledHeaderLinks>
+      <StyledHeaderLinks><a href="#about">About</a></StyledHeaderLinks>
     </StyledHeaderList>
   </StyledHeader>
 
