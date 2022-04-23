@@ -5,7 +5,7 @@ import GlobalStyle from './GlobalStyles';
 
 import Home from './components/Home';
 import Search from './components/Search';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
 function App() {
   return (
